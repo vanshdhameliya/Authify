@@ -1,0 +1,21 @@
+package tech.logicforge.authify.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@Setter
+@Getter
+@AllArgsConstructor
+public class ExceptionResponseDTO {
+
+    private LocalDateTime timeStamp;
+    private Integer statusCode;
+    private String error;
+    private String message;
+    private String path;
+
+}
